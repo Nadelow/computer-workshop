@@ -28,7 +28,7 @@
 
 ![ДЗ](https://sun9-36.userapi.com/impg/KYgBY7ATgW6yTGiuyI5jDgr45Curluv6tgNzNQ/yCePQFc8WF4.jpg?size=635x271&quality=96&sign=21d5b3f367e4cf2c4c619b3dda85c784&type=album)
 
-1. Вычислить: ![L](https://sun9-56.userapi.com/impg/zqIy1ViG5QKgH_8v4PXf2s5J3HHzPToIU4W_Hg/ZYHXAOjGOIc.jpg?size=382x97&quality=96&sign=f5f8a92186ee3be7a54637b4a8a56caf&type=album)
+1. Вычислить: ![L](https://sun9-56.userapi.com/impg/zqIy1ViG5QKgH_8v4PXf2s5J3HHzPToIU4W_Hg/ZYHXAOjGOIc.jpg?size=382x97&quality=96&sign=f5f8a92186ee3be7a54637b4a8a56caf&type=album) (При параметрах (1, 1, 1) ответ: 0,422105
 
 2. Тело движется по закону S = t^3 – 3t^2 + 2. Вычислить скорость тела в момент времени t. Значение t ввести с клавиатуры (Функция скорости есть производная от функции расстояния по времени).
 
