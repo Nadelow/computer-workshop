@@ -1,15 +1,17 @@
 // This is a personal academic project. Dear PVS-Studio, please check it.
 
-// PVS-Studio Static Code Analyzer for C, C++, C#, and Java: http://www.viva64.com
+// PVS-Studio Static Code Analyzer for C, C++, C#, and Java: http://www.viva64.co
+
 
 #include <stdio.h>
-#include <stdlib.h>
 #include <math.h> // Стандартная математическая библиотека
+#include <stdlib.h>
+
 
 #include "functions.h"
 
 int EvenCount(int t_)
-{
+{   
    // Количество четных цифр
    int count = 0;
 
@@ -104,7 +106,7 @@ unsigned long long Fact(int x_)
    if (x_ < 0)
    {
       printf("В функцию Fact поступило отрицательно значение %d\n", x_);
-      exit(1);
+      exit(EXIT_FAILURE);
    }
 
    if (x_ == 0)
@@ -145,6 +147,12 @@ unsigned long long DFact(int x_)
 
 unsigned long long Euler_2(int x_)
 {
+   if (x_ < 0)
+   {
+      printf("В функцию Euler_2 подан отрицательный аргумент\n");
+      exit(EXIT_FAILURE);  
+   }
+
    unsigned long long sum = 0;
 
    unsigned long long prev = 0;
@@ -164,16 +172,97 @@ unsigned long long Euler_2(int x_)
    return sum;
 }
 
+unsigned long long Euler_3(long long n_)
+{
+   if (n_ < 1)
+   {
+      printf("Error input argument Euler_3(%lli)\n", n_);
+      exit(EXIT_FAILURE);
+   }
+
+   unsigned long long factor = 3;
+   unsigned long long lastFactor = 1;
+
+   if (n_ % 2 == 0)
+   {
+      n_ /= 2;
+      lastFactor = 2;
+      
+      while (n_ % 2 == 0)
+         n_ /= 2;  
+   }
+
+   unsigned long long maxFactor = ceil(sqrt(n_));
+
+   while (n_ > 1 && factor <= maxFactor)
+   {
+      if (n_ % factor == 0)
+      {
+         lastFactor = factor;
+         n_ /= factor;
+
+         while (n_ % factor == 0)
+            n_ /= factor;
+
+         maxFactor = ceil(sqrt(n_));
+      }
+
+      factor += 2;
+   }
+
+   if (n_ == 1)
+      return lastFactor;
+   else
+      return n_;
+}
+
 unsigned long long Fib(int n_)
 {
    if (n_ < 0)
    {
-      printf("Ошибка входного параметра Fib(%d)", n_);
-      exit(1);
+      printf("Error input argument Fib(%d)\n", n_);
+      exit(EXIT_FAILURE);
    }
 
    if (n_ < 2)
       return n_;
 
    return Fib(n_ - 1) + Fib(n_ - 2);
+}
+
+void Gallows(int numberOfAttempts_)
+{
+   if (numberOfAttempts_ < 1)
+   {
+      printf("Wrong number of attempts!\n");
+      return;
+   }
+
+   int guess = 1 + rand() % 101;
+
+   do
+   {
+      int n = 0;
+
+      printf("Enter guess number (%d attempts): ", numberOfAttempts_);
+      scanf_s("%d", &n);
+
+      if (n == guess)
+      {
+         printf("You are winner!\n");
+         return;
+      }
+
+      if (n < guess)
+         printf("Your guess less!\n");
+
+      if (n > guess)
+         printf("Your guess more!\n");
+
+      numberOfAttempts_--;
+
+   } while (numberOfAttempts_ > 0);
+
+   printf("You lose! Number is %d\n", guess);
+   return;
 }
