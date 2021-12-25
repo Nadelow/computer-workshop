@@ -4,23 +4,21 @@
 
 # Литература
 
-1. [Слабенькая методичка по "Си" от господина И. Солдатенко](http://prog.tversu.ru/library/C.pdf)
-
 ## Блок чётеньких книг по программированию и всему, что надо знать каждому уважающему себя человеку от господина А. В. Столярова:
 
-2. [Программирование: введение в профессию. Том I: Азы программирования](http://www.stolyarov.info/books/pdf/progintro_vol1.pdf)
+1. [Программирование: введение в профессию. Том I: Азы программирования](http://www.stolyarov.info/books/pdf/progintro_vol1.pdf)
 
-3. [Программирование: введение в профессию. Том II: Низкоуровневое программирование](http://www.stolyarov.info/books/pdf/progintro_vol2.pdf) <-- Тута про "СИ"!!!
+2. [Программирование: введение в профессию. Том II: Низкоуровневое программирование](http://www.stolyarov.info/books/pdf/progintro_vol2.pdf) <-- Тута про "СИ"!!!
 
-4. [Программирование: введение в профессию. Том III: Системы и сети](http://www.stolyarov.info/books/pdf/progintro_vol3.pdf)
+3. [Программирование: введение в профессию. Том III: Системы и сети](http://www.stolyarov.info/books/pdf/progintro_vol3.pdf)
 
-5. [Программирование: введение в профессию. Том IV: Парадигмы](http://www.stolyarov.info/books/pdf/progintro_vol4.pdf)
+4. [Программирование: введение в профессию. Том IV: Парадигмы](http://www.stolyarov.info/books/pdf/progintro_vol4.pdf)
 
-6. [А.В.Столяров. Оформление программного кода. Методическое пособие](http://www.stolyarov.info/books/pdf/codestyle2.pdf)
+5. [А.В.Столяров. Оформление программного кода. Методическое пособие](http://www.stolyarov.info/books/pdf/codestyle2.pdf)
 
-7. [Сверстай диплом красиво: LaTeX за три дня](http://www.stolyarov.info/books/pdf/latex3days.pdf) <-- ЛУЧШАЯ ВЕЩЬ ДЛЯ СТУДЕНТА!!!
+6. [Сверстай диплом красиво: LaTeX за три дня](http://www.stolyarov.info/books/pdf/latex3days.pdf) <-- ЛУЧШАЯ ВЕЩЬ ДЛЯ СТУДЕНТА!!!
 
-8. [И другая некоторая полезная литература от того же автора!](http://stolyarov.info/)
+7. [И другая некоторая полезная литература от того же автора!](http://stolyarov.info/)
 
 # Задачи для ОБЯЗАТЕЛЬНОГО решения на 1-й модуль!
 
